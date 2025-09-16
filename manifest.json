@@ -1,0 +1,18 @@
+{
+  "name": "HL TLD Helper",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Uses 'hl' keyword for .hl domains and redirects them to .hl.place.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "omnibox": {
+    "keyword": "hl"
+  }
+}
